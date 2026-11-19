@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse UPSA national tour surfers and points by competition category.">
+  <title>Category Standings | United Philippine Surfing Association</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="UPSA home">
+      <img src="https://upsa.ph/wp-content/uploads/2024/10/UPSA_LogoIcon-White.png" alt="">
+      <span><b>UNITED PHILIPPINE</b><small>SURFING ASSOCIATION</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <div class="nav-dropdown">
+        <a href="about/about.html" aria-expanded="false">About <span class="dropdown-arrow">⌄</span></a>
+        <div class="dropdown-menu">
+          <a href="about/about.html">About UPSA</a>
+          <a href="about/leadership.html">Leadership</a>
+          <a href="about/technical-team.html">Technical Team</a>
+          <a href="about/surf-club-directory.html">Surf Club Directory</a>
+        </div>
+      </div>
+      <a href="events.html">Events</a>
+      <a data-athletes-nav class="active" href="athletes.html" aria-current="page">Athletes</a>
+      <a href="membership/membership.html">Membership</a>
+      <div class="nav-dropdown">
+        <a href="rankings/rankings.html" aria-expanded="false">Rankings <span class="dropdown-arrow">⌄</span></a>
+        <div class="dropdown-menu">
+          <a href="rankings/2026-tour.html">2026 Rankings</a>
+          <a href="rankings/2025-tour.html">2025 Rankings</a>
+          <a href="rankings/2024-tour.html">2024 Rankings</a>
+          <a href="rankings/2023-tour.html">2023 Rankings</a>
+          <a href="rankings/2022-tour.html">2022 Rankings</a>
+        </div>
+      </div>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="partner-link" href="contact.html">Become a partner <span>↗</span></a>
+    <button class="menu-button" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+  </header>
+
+  <main class="athlete-directory-page athlete-category-page">
+    <section class="athlete-directory-hero" id="athlete-category-hero" hidden>
+      <div class="athlete-directory-hero-copy">
+        <a class="athlete-category-back-link" id="athlete-category-back" href="athletes.html">← All categories</a>
+        <span id="athlete-category-season"></span>
+        <h1 id="athlete-category-title"></h1>
+        <p>Standings are ordered by the published total points from highest to lowest. Scores tied in the source retain their published order.</p>
+      </div>
+    </section>
+
+    <section class="athlete-directory section" id="athlete-category-listing" hidden aria-labelledby="athlete-category-list-title">
+      <div class="section-heading athlete-directory-heading">
+        <div><span>UPSA National Tour</span><h2 id="athlete-category-list-title"></h2></div>
+        <p id="athlete-category-summary"></p>
+      </div>
+      <div class="athlete-directory-controls athlete-category-page-controls">
+        <label class="athlete-search">
+          <span>Search this category</span>
+          <input id="athlete-category-search" type="search" placeholder="Enter an athlete name" autocomplete="off">
+        </label>
+      </div>
+      <p class="athlete-result-count" id="athlete-category-result-count" aria-live="polite"></p>
+      <div class="athlete-directory-grid" id="athlete-category-grid"></div>
+      <p class="athlete-no-results" id="athlete-category-no-results" hidden>No surfers match that search. Try another name.</p>
+    </section>
+
+    <section class="athlete-profile-unavailable section" id="athlete-category-unavailable" hidden aria-live="polite">
+      <span>UPSA / Athlete standings</span>
+      <h1>Category standings not found</h1>
+      <p>We could not find a matching category and season in the available ranking records.</p>
+      <a class="athlete-action-link" href="athletes.html">Back to all categories <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><img src="https://upsa.ph/wp-content/uploads/2020/05/UPSA_Logo1-white-1-183x300.png" alt="UPSA"><p>United Philippine<br>Surfing Association</p></div>
+    <div><span>Explore</span><a href="about/about.html">About us</a><a href="events.html">Events</a><a href="athletes.html">Athletes</a><a href="membership/membership.html">Membership</a><a href="rankings/rankings.html">Rankings</a></div>
+    <div class="footer-social"><span>Connect</span><div>
+      <a href="https://www.facebook.com/officialupsa.ph" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="https://cdn.simpleicons.org/facebook/FFFFFF" alt=""></a>
+      <a href="https://www.instagram.com/upsa.ph" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="https://cdn.simpleicons.org/instagram/FFFFFF" alt=""></a>
+      <a href="https://www.youtube.com/@pilipinassurfing" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="https://cdn.simpleicons.org/youtube/FFFFFF" alt=""></a>
+      <a href="https://www.linkedin.com/company/upsaph" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="footer-linkedin-mark" aria-hidden="true">in</span></a>
+    </div></div>
+    <div class="footer-bottom"><span>© 2026 UPSA</span><span>Made for Philippine surfing</span></div>
+  </footer>
+  <script src="rankings-data.js"></script>
+  <script src="athlete-data.js"></script>
+  <script src="athletes.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

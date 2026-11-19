@@ -1,0 +1,122 @@
+{
+  "audited_at": "2026-11-19",
+  "source_file": "rankings-data.js",
+  "source_variable": "window.upsaRankings",
+  "years": [
+    {
+      "year": 2022,
+      "category_count": 6,
+      "ranking_rows": 556,
+      "unique_source_names": 482,
+      "athlete_id_column": false,
+      "rows_with_athlete_id": 0,
+      "missing_leg_values": 34,
+      "duplicate_name_groups": 2,
+      "conflicting_athlete_ids": [],
+      "divisions": [
+        "Men's Shortboard",
+        "Men's Longboard",
+        "Women's Shortboard",
+        "Women's Longboard",
+        "Junior Boys",
+        "Junior Girls"
+      ]
+    },
+    {
+      "year": 2023,
+      "category_count": 6,
+      "ranking_rows": 373,
+      "unique_source_names": 314,
+      "athlete_id_column": false,
+      "rows_with_athlete_id": 0,
+      "missing_leg_values": 0,
+      "duplicate_name_groups": 0,
+      "conflicting_athlete_ids": [],
+      "divisions": [
+        "Men's Shortboard",
+        "Men's Longboard",
+        "Women's Shortboard",
+        "Women's Longboard",
+        "Junior Boys",
+        "Junior Girls"
+      ]
+    },
+    {
+      "year": 2024,
+      "category_count": 6,
+      "ranking_rows": 363,
+      "unique_source_names": 295,
+      "athlete_id_column": false,
+      "rows_with_athlete_id": 0,
+      "missing_leg_values": 0,
+      "duplicate_name_groups": 0,
+      "conflicting_athlete_ids": [],
+      "divisions": [
+        "Men's Shortboard",
+        "Men's Longboard",
+        "Women's Shortboard",
+        "Women's Longboard",
+        "Junior Boys",
+        "Junior Girls"
+      ]
+    },
+    {
+      "year": 2025,
+      "category_count": 6,
+      "ranking_rows": 497,
+      "unique_source_names": 438,
+      "athlete_id_column": true,
+      "rows_with_athlete_id": 497,
+      "missing_leg_values": 27,
+      "duplicate_name_groups": 0,
+      "conflicting_athlete_ids": [
+        {
+          "athlete_id": "25105",
+          "names": ["Maureen Delamide", "Ashlee Lopez"]
+        },
+        {
+          "athlete_id": "25400",
+          "names": ["Astrid Sadaya", "Maureen Delamide"]
+        }
+      ],
+      "divisions": [
+        "Men's Open Shortboard",
+        "Women's Open Shortboard",
+        "Men's Open Longboard",
+        "Women's Open Longboard",
+        "Junior Boys",
+        "Junior Girls"
+      ]
+    },
+    {
+      "year": 2026,
+      "category_count": 6,
+      "ranking_rows": 355,
+      "unique_source_names": 328,
+      "athlete_id_column": true,
+      "rows_with_athlete_id": 355,
+      "missing_leg_values": 836,
+      "duplicate_name_groups": 0,
+      "conflicting_athlete_ids": [],
+      "divisions": [
+        "Mens Open Shortboard",
+        "Womens Open Shortboard",
+        "Mens Open Longboard",
+        "Womens Open Longboard",
+        "Junior Boys",
+        "Junior Girls"
+      ]
+    }
+  ],
+  "total_ranking_rows": 2144,
+  "known_data_limitations": [
+    "2022-2024 do not contain Athlete ID columns.",
+    "2025-2026 contain Athlete ID columns.",
+    "Leg points may be empty or zero; null and zero must not be conflated.",
+    "2022 carryover column names differ between shortboard and longboard categories.",
+    "Division names differ between 2025 and 2026 wording.",
+    "Leg points are ranking sources, not individual event placement records.",
+    "Conflicting Athlete IDs and duplicate names must remain review cases.",
+    "No individual competition names, event dates, or placements may be inferred."
+  ]
+}

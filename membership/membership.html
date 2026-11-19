@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Compare UPSA athlete membership options, fees, and registration links.">
+  <title>Membership | United Philippine Surfing Association</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="membership-body">
+  <div class="membership-notice">Membership registration and renewal are open. <a href="#membership-flow">Register or renew ↗</a></div>
+  <header class="site-header inner-header">
+    <a class="brand" href="../index.html" aria-label="UPSA home"><img src="https://upsa.ph/wp-content/uploads/2024/10/UPSA_LogoIcon-White.png" alt=""><span><b>UNITED PHILIPPINE</b><small>SURFING ASSOCIATION</small></span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="../index.html">Home</a><div class="nav-dropdown"><a href="../about/about.html" aria-expanded="false">About <span class="dropdown-arrow">⌄</span></a><div class="dropdown-menu"><a href="../about/about.html">About UPSA</a><a href="../about/leadership.html">Leadership</a><a href="../about/technical-team.html">Technical Team</a><a href="../about/surf-club-directory.html">Surf Club Directory</a></div></div>
+      <a href="../events.html">Events</a><a class="active" href="membership.html">Membership</a>
+      <div class="nav-dropdown"><a href="../rankings/rankings.html">Rankings <span class="dropdown-arrow">⌄</span></a><div class="dropdown-menu"><a href="../rankings/2026-tour.html">2026 Rankings</a><a href="../rankings/2025-tour.html">2025 Rankings</a><a href="../rankings/2024-tour.html">2024 Rankings</a><a href="../rankings/2023-tour.html">2023 Rankings</a><a href="../rankings/2022-tour.html">2022 Rankings</a></div></div>
+      <a href="../news.html">News</a><a href="../contact.html">Contact</a>
+    </nav>
+    <a class="partner-link" href="../contact.html">Become a partner <span>↗</span></a>
+    <button class="menu-button" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+  </header>
+
+  <main class="membership-page">
+    <section class="membership-hero">
+      <div>
+        <span>Athlete membership</span>
+        <h1>Your National Tour journey starts here.</h1>
+        <p>Choose the UPSA membership option that fits the season and events you plan to enter.</p>
+        <div class="membership-actions">
+          <a class="membership-primary-action" href="#membership-flow">Register or renew <span>↘</span></a>
+          <a class="membership-secondary-action" href="#membership-flow" data-membership-start="new">New member registration</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="membership-requirement section">
+      <div><span>Before you compete</span><h2>Membership is required.</h2></div>
+      <div>
+        <p>A current UPSA membership is required for athletes entering UPSA-sanctioned Pilipinas Surfing National Tour events. Review the current rules and select the plan that suits your competition schedule.</p>
+        <a class="rulebook-link" href="https://upsa.ph/wp-content/uploads/2026/09/UPSA-Rule-Book-Revised-9_10_2026.pdf" target="_blank" rel="noopener noreferrer">Read the UPSA Rulebook <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="membership-plans section">
+      <div class="section-heading">
+        <div><span>Two ways to join</span><h2>Choose your plan</h2></div>
+        <p>Both plans provide the membership required to compete; access and validity depend on the option selected.</p>
+      </div>
+      <div class="membership-plan-grid">
+        <article class="membership-plan">
+          <div class="plan-topline"><span>01 / Full season</span><span class="plan-tag">Best for multiple events</span></div>
+          <h3>Annual Membership</h3>
+          <p class="plan-description">One membership covers the Pilipinas Surfing National Tour legs throughout the competition season. It remains valid until the season officially closes.</p>
+          <div class="plan-facts">
+            <div><span>Validity</span><b>One season</b></div>
+            <div><span>Event access</span><b>All national tour events</b></div>
+          </div>
+          <p class="plan-price"><strong>PHP 1,000</strong><span>per season</span></p>
+          <a href="#membership-flow" data-membership-plan="Annual Membership">Choose annual membership <span>↘</span></a>
+        </article>
+        <article class="membership-plan one-time-plan">
+          <div class="plan-topline"><span>02 / Single event</span><span class="plan-tag">One competition</span></div>
+          <h3>One-Time Membership</h3>
+          <p class="plan-description">A single-event membership applies to one event only. It cannot be carried forward to the next event you register for.</p>
+          <div class="plan-facts">
+            <div><span>Validity</span><b>One event</b></div>
+            <div><span>Event access</span><b>One event only</b></div>
+          </div>
+          <p class="plan-price"><strong>PHP 500</strong><span>per event</span></p>
+          <a href="#membership-flow" data-membership-plan="One-Time Membership">Choose one-time membership <span>↘</span></a>
+        </article>
+      </div>
+      <p class="membership-note">Membership plans, eligibility, and event requirements may be subject to the latest UPSA Rulebook and registration instructions.</p>
+    </section>
+
+    <div class="membership-modal" id="membership-flow" hidden>
+      <div class="membership-modal-backdrop" data-membership-close></div>
+      <section class="membership-flow" role="dialog" aria-modal="true" aria-labelledby="membership-dialog-title" tabindex="-1">
+        <button class="membership-modal-close" type="button" aria-label="Close membership registration" data-membership-close>×</button>
+        <div class="membership-flow-heading">
+          <div><span>Registration / renewal</span><h2 id="membership-dialog-title">Let’s find your next step.</h2></div>
+          <p id="membership-selected-plan" aria-live="polite">Choose whether you competed on the 2025 Pilipinas Surfing National Tour.</p>
+        </div>
+        <div class="membership-flow-panel membership-flow-question" id="membership-question-step">
+          <span class="membership-step-label">Step 1 / Eligibility</span>
+          <h3 tabindex="-1">Did you compete in any leg of the 2025 National Tour?</h3>
+          <p>Choose the option that matches your participation last season.</p>
+          <div class="membership-choice-buttons">
+            <button type="button" data-membership-answer="yes">Yes, I competed <span>→</span></button>
+            <button type="button" data-membership-answer="no">No, I did not compete <span>→</span></button>
+          </div>
+        </div>
+        <div class="membership-flow-panel membership-next-step" id="membership-yes-step" hidden>
+          <span class="membership-step-label">Step 2 / Returning athlete</span>
+          <h3 tabindex="-1">Renew your membership</h3>
+          <ol class="membership-instructions">
+            <li>Find your Athlete ID in the <a href="../rankings/2025-tour.html">2025 Pilipinas Surfing National Tour rankings <span>↗</span></a>.</li>
+            <li>Have your Athlete ID ready, then complete the renewal form and select your membership plan.</li>
+          </ol>
+          <div class="membership-flow-actions">
+            <button class="membership-back-button" type="button" data-membership-back>← Back to question</button>
+            <a class="membership-form-link" href="https://docs.google.com/forms/d/e/1FAIpQLScASdd-29GD57o7utW45U-4FHnM0x2WNfeIgPgxzsy6QSIKYw/viewform" target="_blank" rel="noopener noreferrer">Continue to renewal form <span>↗</span></a>
+          </div>
+        </div>
+        <div class="membership-flow-panel membership-next-step" id="membership-no-step" hidden>
+          <span class="membership-step-label">Step 2 / New member</span>
+          <h3 tabindex="-1">Register for UPSA membership</h3>
+          <ol class="membership-instructions">
+            <li>Complete the new-member registration form with accurate information.</li>
+            <li>Choose and pay for your membership plan.</li>
+            <li>Register for the events you want to enter.</li>
+          </ol>
+          <div class="membership-flow-actions">
+            <button class="membership-back-button" type="button" data-membership-back>← Back to question</button>
+            <a class="membership-form-link" href="https://docs.google.com/forms/d/e/1FAIpQLSci7CLIypF-YcHVm8ASDKW6WKvWvgF9l-8pKeLk5YD01RWlgA/viewform" target="_blank" rel="noopener noreferrer">Continue to registration form <span>↗</span></a>
+          </div>
+        </div>
+        <p class="membership-flow-note">The Google Forms are managed by UPSA. Information you enter is submitted directly to UPSA, not stored on this website.</p>
+      </section>
+    </div>
+
+    <section class="membership-help">
+      <div><span>Ready to take part?</span><h2>Register or renew your membership.</h2></div>
+      <a href="#membership-flow">Start registration <b>↘</b></a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><img src="https://upsa.ph/wp-content/uploads/2020/05/UPSA_Logo1-white-1-183x300.png" alt="UPSA"><p>United Philippine<br>Surfing Association</p></div>
+    <div><span>Explore</span><a href="../about/about.html">About us</a><a href="../events.html">Events</a><a href="membership.html">Membership</a></div>
+    <div class="footer-social"><span>Connect</span><div>
+      <a href="https://www.facebook.com/officialupsa.ph" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="https://cdn.simpleicons.org/facebook/FFFFFF" alt=""></a>
+      <a href="https://www.instagram.com/upsa.ph" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="https://cdn.simpleicons.org/instagram/FFFFFF" alt=""></a>
+      <a href="https://www.youtube.com/@pilipinassurfing" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="https://cdn.simpleicons.org/youtube/FFFFFF" alt=""></a>
+      <a href="https://www.linkedin.com/company/upsaph" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="footer-linkedin-mark" aria-hidden="true">in</span></a>
+    </div></div>
+    <div class="footer-bottom"><span>© 2026 UPSA</span><span>Made for Philippine surfing</span></div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>

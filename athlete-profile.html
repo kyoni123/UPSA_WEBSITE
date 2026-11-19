@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore available UPSA athlete rankings and competition history.">
+  <title>Athlete Profile | United Philippine Surfing Association</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header inner-header">
+    <a class="brand" href="index.html" aria-label="UPSA home">
+      <img src="https://upsa.ph/wp-content/uploads/2024/10/UPSA_LogoIcon-White.png" alt="">
+      <span><b>UNITED PHILIPPINE</b><small>SURFING ASSOCIATION</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <div class="nav-dropdown">
+        <a href="about/about.html" aria-expanded="false">About <span class="dropdown-arrow">⌄</span></a>
+        <div class="dropdown-menu">
+          <a href="about/about.html">About UPSA</a>
+          <a href="about/leadership.html">Leadership</a>
+          <a href="about/technical-team.html">Technical Team</a>
+          <a href="about/surf-club-directory.html">Surf Club Directory</a>
+        </div>
+      </div>
+      <a href="events.html">Events</a>
+      <a data-athletes-nav class="active" href="athletes.html">Athletes</a>
+      <a href="membership/membership.html">Membership</a>
+      <div class="nav-dropdown">
+        <a href="rankings/rankings.html" aria-expanded="false">Rankings <span class="dropdown-arrow">⌄</span></a>
+        <div class="dropdown-menu">
+          <a href="rankings/2026-tour.html">2026 Rankings</a>
+          <a href="rankings/2025-tour.html">2025 Rankings</a>
+          <a href="rankings/2024-tour.html">2024 Rankings</a>
+          <a href="rankings/2023-tour.html">2023 Rankings</a>
+          <a href="rankings/2022-tour.html">2022 Rankings</a>
+        </div>
+      </div>
+      <a href="news.html">News</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="partner-link" href="contact.html">Become a partner <span>↗</span></a>
+    <button class="menu-button" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+  </header>
+
+  <main class="athlete-profile-page">
+    <section class="athlete-profile-unavailable section" id="athlete-profile-unavailable" hidden aria-live="polite">
+      <span>UPSA / Athlete profile</span>
+      <h1>Athlete not found</h1>
+      <p>We could not find a matching athlete in the available ranking records.</p>
+      <a class="athlete-action-link" href="athletes.html">Back to the directory <span>↗</span></a>
+    </section>
+
+    <article class="athlete-profile-content" id="athlete-profile-content" hidden>
+      <section class="athlete-profile-hero">
+        <div class="athlete-cover" id="athlete-cover">
+          <img id="athlete-cover-image" alt="" hidden>
+          <div class="athlete-cover-shade"></div>
+          <a class="athlete-back-link" href="athletes.html">← Athlete directory</a>
+          <span class="athlete-cover-label">UPSA / Athlete profile</span>
+          <span class="athlete-cover-fallback" id="athlete-cover-fallback" hidden>Cover photo unavailable</span>
+        </div>
+        <div class="athlete-profile-heading">
+          <div class="athlete-profile-portrait" id="athlete-profile-portrait">
+            <img id="athlete-profile-image" alt="" hidden>
+            <span id="athlete-profile-initials" aria-hidden="true"></span>
+            <small id="athlete-profile-photo-note">Profile photo unavailable</small>
+          </div>
+          <div class="athlete-profile-title">
+            <span class="athlete-profile-kicker">Pilipinas Surfing National Tour</span>
+            <h1 id="athlete-name"></h1>
+            <p id="athlete-id"></p>
+            <p class="athlete-profile-location" id="athlete-profile-location" hidden></p>
+            <span class="athlete-nationality" id="athlete-nationality" hidden></span>
+            <div class="athlete-division-tags" id="athlete-divisions"></div>
+          </div>
+        </div>
+      </section>
+
+      <nav class="athlete-profile-nav" aria-label="Athlete profile sections">
+        <div>
+          <a href="#athlete-overview" class="active">Overview</a>
+          <a href="#athlete-rankings">Rankings</a>
+          <a href="#athlete-results">Results</a>
+          <a href="#athlete-career">Career</a>
+        </div>
+      </nav>
+
+      <div class="athlete-profile-body">
+        <p class="athlete-identity-note" id="athlete-identity-note" hidden></p>
+
+        <section class="athlete-profile-section" id="athlete-overview" aria-labelledby="athlete-overview-title">
+          <div class="athlete-section-heading">
+            <span>Career profile</span>
+            <h2 id="athlete-overview-title">Overview</h2>
+          </div>
+          <div class="athlete-stat-grid" id="athlete-stats" aria-label="Ranking statistics"></div>
+        </section>
+
+        <section class="athlete-profile-section" id="athlete-rankings" aria-labelledby="athlete-rankings-title">
+          <div class="athlete-section-heading">
+            <span>Source standings</span>
+            <h2 id="athlete-rankings-title">Ranking history</h2>
+          </div>
+          <p class="athlete-section-intro">Ranking progression from the available season records. Each line represents a source division; seasons with multiple divisions are shown separately.</p>
+          <div class="athlete-ranking-chart" id="athlete-ranking-chart" role="img" aria-labelledby="athlete-ranking-chart-title athlete-ranking-chart-description"></div>
+          <table class="athlete-chart-table" id="athlete-ranking-chart-table">
+            <caption id="athlete-ranking-chart-description">Text alternative: ranking records used in the chart.</caption>
+            <thead><tr><th scope="col">Season</th><th scope="col">Division</th><th scope="col">Final rank</th></tr></thead>
+            <tbody></tbody>
+          </table>
+          <div class="athlete-table-scroll" tabindex="0" role="region" aria-label="Ranking history table; scroll horizontally to see all columns">
+            <table class="athlete-history-table">
+              <thead>
+                <tr><th scope="col">Season</th><th scope="col">Source division</th><th scope="col">Rank</th><th scope="col">Total points</th><th scope="col">Source basis</th></tr>
+              </thead>
+              <tbody id="athlete-ranking-history"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="athlete-profile-section" id="athlete-results" aria-labelledby="athlete-results-title">
+          <div class="athlete-section-heading">
+            <span>Points by event leg</span>
+            <h2 id="athlete-results-title">Competition history</h2>
+          </div>
+          <p class="athlete-section-intro">The available records show points by leg, but do not include event names, dates, or individual event placements.</p>
+          <div class="athlete-table-scroll" tabindex="0" role="region" aria-label="Competition leg points table; scroll horizontally to see all columns">
+            <table class="athlete-history-table athlete-leg-table">
+              <thead>
+                <tr><th scope="col">Season</th><th scope="col">Source division</th><th scope="col">Event-leg points</th></tr>
+              </thead>
+              <tbody id="athlete-leg-history"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="athlete-profile-section athlete-facts-section" id="athlete-career" aria-labelledby="athlete-career-title">
+          <div class="athlete-section-heading">
+            <span>Supported by source records</span>
+            <h2 id="athlete-career-title">Career achievements</h2>
+          </div>
+          <ul class="athlete-achievements" id="athlete-achievements"></ul>
+          <p class="athlete-section-intro">Club, hometown, country, and biography details are not included unless they are independently verified and supplied for the profile. No unsupported awards or championships are inferred.</p>
+        </section>
+
+        <a class="athlete-action-link athlete-more-link" href="athletes.html">Browse all athletes <span>↗</span></a>
+      </div>
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><img src="https://upsa.ph/wp-content/uploads/2020/05/UPSA_Logo1-white-1-183x300.png" alt="UPSA"><p>United Philippine<br>Surfing Association</p></div>
+    <div><span>Explore</span><a href="about/about.html">About us</a><a href="events.html">Events</a><a href="athletes.html">Athletes</a><a href="membership/membership.html">Membership</a><a href="rankings/rankings.html">Rankings</a></div>
+    <div class="footer-social"><span>Connect</span><div>
+      <a href="https://www.facebook.com/officialupsa.ph" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="https://cdn.simpleicons.org/facebook/FFFFFF" alt=""></a>
+      <a href="https://www.instagram.com/upsa.ph" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="https://cdn.simpleicons.org/instagram/FFFFFF" alt=""></a>
+      <a href="https://www.youtube.com/@pilipinassurfing" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="https://cdn.simpleicons.org/youtube/FFFFFF" alt=""></a>
+      <a href="https://www.linkedin.com/company/upsaph" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="footer-linkedin-mark" aria-hidden="true">in</span></a>
+    </div></div>
+    <div class="footer-bottom"><span>© 2026 UPSA</span><span>Made for Philippine surfing</span></div>
+  </footer>
+  <script src="rankings-data.js"></script>
+  <script src="athlete-data.js"></script>
+  <script src="athlete-profile.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse United Philippine Surfing Association events, competitions, and programs.">
+  <title>Events | United Philippine Surfing Association</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header inner-header">
+    <a class="brand" href="index.html" aria-label="UPSA home"><img src="https://upsa.ph/wp-content/uploads/2024/10/UPSA_LogoIcon-White.png" alt=""><span><b>UNITED PHILIPPINE</b><small>SURFING ASSOCIATION</small></span></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a><div class="nav-dropdown"><a href="about/about.html" aria-expanded="false">About <span class="dropdown-arrow">⌄</span></a><div class="dropdown-menu"><a href="about/about.html">About UPSA</a><a href="about/leadership.html">Leadership</a><a href="about/technical-team.html">Technical Team</a><a href="about/surf-club-directory.html">Surf Club Directory</a></div></div>
+      <a class="active" href="events.html">Events</a><a href="membership/membership.html">Membership</a>
+      <div class="nav-dropdown"><a href="rankings/rankings.html">Rankings <span class="dropdown-arrow">⌄</span></a><div class="dropdown-menu">
+        <a href="rankings/2026-tour.html">2026 Rankings</a><a href="rankings/2025-tour.html">2025 Rankings</a><a href="rankings/2024-tour.html">2024 Rankings</a><a href="rankings/2023-tour.html">2023 Rankings</a><a href="rankings/2022-tour.html">2022 Rankings</a>
+      </div></div><a href="news.html">News</a><a href="contact.html">Contact</a>
+    </nav>
+    <a class="partner-link" href="contact.html">Become a partner <span>↗</span></a>
+    <button class="menu-button" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
+  </header>
+
+  <main class="events-page">
+    <section class="events-hero"><h1>Events</h1></section>
+    <section class="event-browser" aria-label="Search events">
+      <form class="event-search" id="event-search-form">
+        <label class="event-search-field"><span class="visually-hidden">Search for events</span><span class="search-icon" aria-hidden="true">⌕</span><input id="event-keyword" type="search" placeholder="Search for events"></label>
+        <label class="event-search-field location-field"><span class="visually-hidden">Location</span><span class="location-icon" aria-hidden="true">⌖</span><input id="event-location" type="search" placeholder="Location"></label>
+        <button class="event-filter-toggle" id="event-filter-toggle" type="button" aria-label="Show event filters" aria-expanded="false">☷</button>
+        <button class="event-search-submit" type="submit">Find Events</button>
+        <div class="event-extra-filters" id="event-extra-filters" hidden>
+          <label>Event type
+            <select id="event-type">
+              <option value="">All event types</option>
+              <option value="National Tour">National Tour</option>
+              <option value="Local Competitions">Local Competitions</option>
+              <option value="Grassroots Program">Grassroots Program</option>
+              <option value="Uncategorized">Other / not listed</option>
+            </select>
+          </label>
+          <label>From<input id="event-from" type="date"></label>
+          <label>To<input id="event-to" type="date"></label>
+        </div>
+      </form>
+
+      <div class="event-results-heading">
+        <h2>Events</h2>
+        <p id="event-result-count" aria-live="polite">9 events</p>
+        <div class="event-view-toggle" role="group" aria-label="Event layout">
+          <button type="button" class="selected" data-event-view="grid" aria-label="Grid view" aria-pressed="true">▦</button>
+          <button type="button" data-event-view="list" aria-label="List view" aria-pressed="false">☰</button>
+        </div>
+      </div>
+
+      <div class="event-card-grid" id="event-card-grid">
+        <article class="event-listing" data-title="Cabugao National Surfing Championships" data-location="Sabang Pier, Cabugao, Ilocos Sur" data-type="National Tour" data-start="2026-12-08" data-end="2026-12-18">
+          <a class="event-card-image" href="https://upsa.ph/event/cabugao-national-surfing-championships-2026/" target="_blank" rel="noopener noreferrer">
+            <img src="https://upsa.ph/wp-content/uploads/2025/07/UPSA-Website-Event-Banner.png" alt="UPSA event banner for Cabugao National Surfing Championships">
+            <span class="event-date-badge"><b>08</b><small>DEC</small></span>
+          </a>
+          <div class="event-card-content">
+            <h3><a href="https://upsa.ph/event/cabugao-national-surfing-championships-2026/" target="_blank" rel="noopener noreferrer">Cabugao National Surfing Championships</a></h3>
+            <p class="event-card-date"><span aria-hidden="true">◷</span> December 8, 2026 - December 18, 2026</p>
+            <p class="event-card-location"><span aria-hidden="true">⌖</span> Sabang Pier, Cabugao, Ilocos Sur</p>
+            <span class="event-category">National Tour</span>
+          </div>
+        </article>
+
+        <article class="event-listing" data-title="UPSA Judging &amp; Coaching Certification Camp" data-location="San Juan, La Union, Philippines" data-type="Uncategorized" data-start="2026-12-01" data-end="2026-12-05">
+          <a class="event-card-image" href="https://upsa.ph/event/isa-judging-water-safety-course-la-union/" target="_blank" rel="noopener noreferrer">
+            <img src="https://upsa.ph/wp-content/uploads/2026/10/ISA-La-Union-Poster-scaled.png" alt="UPSA Judging and Coaching Certification Camp poster">
+            <span class="event-date-badge"><b>01</b><small>DEC</small></span>
+          </a>
+          <div class="event-card-content">
+            <h3><a href="https://upsa.ph/event/isa-judging-water-safety-course-la-union/" target="_blank" rel="noopener noreferrer">UPSA Judging &amp; Coaching Certification Camp</a></h3>
+            <p class="event-card-date"><span aria-hidden="true">◷</span> December 1, 2026 - December 5, 2026</p>
+            <p class="event-card-location"><span aria-hidden="true">⌖</span> San Juan, La Union, Philippines</p>
+          </div>
+        </article>
+
+        <article class="event-listing" data-title="Pasaripoy 2026" data-location="Barangay Lubayat, Real, Quezon Province" data-type="National Tour" data-start="2026-11-24" data-end="2026-11-29">
+          <a class="event-card-image" href="https://upsa.ph/event/pasaripoy-2026/" target="_blank" rel="noopener noreferrer">
+            <img src="https://upsa.ph/wp-content/uploads/2026/09/CommunityGroupIcon.png" alt="Pasaripoy 2026 event graphic">
+            <span class="event-date-badge"><b>24</b><small>NOV</small></span>
+          </a>
+          <div class="event-card-content">
+            <h3><a href="https://upsa.ph/event/pasaripoy-2026/" target="_blank" rel="noopener noreferrer">Pasaripoy 2026</a></h3>
+            <p class="event-card-date"><span aria-hidden="true">◷</span> November 24, 2026 - November 29, 2026</p>
+            <p class="event-card-location"><span aria-hidden="true">⌖</span> Barangay Lubayat, Real, Quezon Province</p>
+            <span class="event-category">National Tour</span>
+          </div>
+        </article>
+
+        <article class="event-listing" data-title="Sta. Monica Longboard Open" data-location="" data-type="National Tour" data-start="2026-11-13" data-end="2026-11-18">
+          <a class="event-card-image" href="https://upsa.ph/event/sta-monicao-longboard-open/" target="_blank" rel="noopener noreferrer">
+            <img src="https://upsa.ph/wp-content/uploads/2025/07/UPSA-Website-Event-Banner.png" alt="UPSA event banner for Sta. Monica Longboard Open">
+            <span class="event-date-badge"><b>13</b><small>NOV</small></span>
+          </a>
+          <div class="event-card-content">
+            <h3><a href="https://upsa.ph/event/sta-monicao-longboard-open/" target="_blank" rel="noopener noreferrer">Sta. Monica Longboard Open</a></h3>
+            <p class="event-card-date"><span aria-hidden="true">◷</span> November 13, 2026 - November 18, 2026</p>
+            <p class="event-card-location"><span aria-hidden="true">⌖</span> —</p>
+            <span class="event-category">National Tour</span>
+          </div>
+        </article>
+
+        <article class="event-listing" data-title="Mayor Jaime Plaza Rusillon Cloud 9 Memorial Surfing Cup" data-location="" data-type="National Tour" data-start="2026-10-12" data-end="2026-10-19">
+          <a class="event-card-image" href="https://upsa.ph/event/mayor-jaime-plaza-rusillon-cloud-9-memorial-surfing-cup/" target="_blank" rel="noopener noreferrer">
+            <img src="https://upsa.ph/wp-content/uploads/2025/07/UPSA-Website-Event-Banner.png" alt="UPSA event banner for Mayor Jaime Plaza Rusillon Cloud 9 Memorial Surfing Cup">
+            <span class="event-date-badge"><b>12</b><small>OCT</small></span>
+          </a>
+          <div class="event-card-content">
+            <h3><a href="https://upsa.ph/event/mayor-jaime-plaza-rusillon-cloud-9-memorial-surfing-cup/" target="_blank" rel="noopener noreferrer">Mayor Jaime Plaza Rusillon Cloud 9 Memorial Surfing Cup</a></h3>
+            <p class="event-card-date"><span aria-hidden="true">◷</span> October 12, 2026 - October 19, 2026</p>
+            <p class="event-card-location"><span aria-hidden="true">⌖</span> —</p>
+            <span class="event-category">National Tour</span>
+          </div>
+        </article>
+
+        <article class="event-listing" data-title="3rd Pacific National Surfing Competition" data-location="" data-type="National Tour" data-start="2026-10-05" data-end="2026-10-10">
+          <a class="event-card-image" href="https://upsa.ph/event/3rd-pacific-national-surfing-competition/" target="_blank" rel="noopener noreferrer">
+            <img src="https://upsa.ph/wp-content/uploads/2025/07/UPSA-Website-Event-Banner.png" alt="UPSA event banner for 3rd Pacific National Surfing Competition">
+            <span class="event-date-badge"><b>05</b><small>OCT</small></span>
+          </a>
+          <div class="event-card-content">
+            <h3><a href="https://upsa.ph/event/3rd-pacific-national-surfing-competition/" target="_blank" rel="noopener noreferrer">3rd Pacific National Surfing Competition</a></h3>
+            <p class="event-card-date"><span aria-hidden="true">◷</span> October 5, 2026 - October 10, 2026</p>
+            <p class="event-card-location"><span aria-hidden="true">⌖</span> —</p>
+            <span class="event-category">National Tour</span>
+          </div>
+        </article>
+
+        <article class="event-listing" data-title="Safe Surf 2026" data-location="Bagasbas Beach, Daet, Camarines Norte" data-type="National Tour" data-start="2026-09-24" data-end="2026-09-30">
+          <a class="event-card-image" href="https://upsa.ph/event/safe-surf-2026/" target="_blank" rel="noopener noreferrer">
+            <img src="https://upsa.ph/wp-content/uploads/2026/06/POSTER-01-scaled.jpg" alt="Safe Surf 2026 event poster">
+            <span class="event-date-badge"><b>24</b><small>SEP</small></span>
+          </a>
+          <div class="event-card-content">
+            <h3><a href="https://upsa.ph/event/safe-surf-2026/" target="_blank" rel="noopener noreferrer">Safe Surf 2026</a></h3>
+            <p class="event-card-date"><span aria-hidden="true">◷</span> September 24, 2026 - September 30, 2026</p>
+            <p class="event-card-location"><span aria-hidden="true">⌖</span> Bagasbas Beach, Daet, Camarines Norte</p>
+            <span class="event-category">National Tour</span>
+          </div>
+        </article>
+
+        <article class="event-listing" data-title="Surf Palooza 2026" data-location="Lawigan, Bislig City, Philippines" data-type="Local Competitions" data-start="2026-02-12" data-end="2026-02-14">
+          <a class="event-card-image" href="https://upsa.ph/event/surf-palooza-2026/" target="_blank" rel="noopener noreferrer">
+            <img src="https://upsa.ph/wp-content/uploads/2026/02/SurfPalooza_EventBanner.png" alt="Surf Palooza 2026 event banner">
+            <span class="event-date-badge"><b>12</b><small>FEB</small></span>
+          </a>
+          <div class="event-card-content">
+            <h3><a href="https://upsa.ph/event/surf-palooza-2026/" target="_blank" rel="noopener noreferrer">Surf Palooza 2026</a></h3>
+            <p class="event-card-date"><span aria-hidden="true">◷</span> February 12, 2026 - February 14, 2026</p>
+            <p class="event-card-location"><span aria-hidden="true">⌖</span> Lawigan, Bislig City, Philippines</p>
+            <span class="event-category">Local Competitions</span>
+          </div>
+        </article>
+
+        <article class="event-listing" data-title="La Union Grassroots Program" data-location="Urbiztondo Beach, San Juan, La Union" data-type="Grassroots Program" data-start="2025-04-14" data-end="2025-04-14">
+          <a class="event-card-image" href="https://upsa.ph/event/2026-la-union-grassroots-program/" target="_blank" rel="noopener noreferrer">
+            <img src="https://upsa.ph/wp-content/uploads/2025/05/Real-Website-Banner-scaled.png" alt="La Union Grassroots Program event banner">
+            <span class="event-date-badge"><b>14</b><small>APR</small></span>
+          </a>
+          <div class="event-card-content">
+            <h3><a href="https://upsa.ph/event/2026-la-union-grassroots-program/" target="_blank" rel="noopener noreferrer">La Union Grassroots Program</a></h3>
+            <p class="event-card-date"><span aria-hidden="true">◷</span> April 14, 2025 -</p>
+            <p class="event-card-location"><span aria-hidden="true">⌖</span> Urbiztondo Beach, San Juan, La Union</p>
+            <span class="event-category">Grassroots Program</span>
+          </div>
+        </article>
+      </div>
+      <p class="event-no-results" id="event-no-results" hidden>No events match those filters. Try changing your search.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><img src="https://upsa.ph/wp-content/uploads/2020/05/UPSA_Logo1-white-1-183x300.png" alt="UPSA"><p>United Philippine<br>Surfing Association</p></div>
+    <div><span>Explore</span><a href="about/about.html">About us</a><a href="about/surf-club-directory.html">Surf Club Directory</a><a href="events.html">Events</a></div>
+    <div class="footer-social"><span>Connect</span><div>
+      <a href="https://www.facebook.com/officialupsa.ph" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="https://cdn.simpleicons.org/facebook/FFFFFF" alt=""></a>
+      <a href="https://www.instagram.com/upsa.ph" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="https://cdn.simpleicons.org/instagram/FFFFFF" alt=""></a>
+      <a href="https://www.youtube.com/@pilipinassurfing" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="https://cdn.simpleicons.org/youtube/FFFFFF" alt=""></a>
+      <a href="https://www.linkedin.com/company/upsaph" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><span class="footer-linkedin-mark" aria-hidden="true">in</span></a>
+    </div></div>
+    <div class="footer-bottom"><span>© 2026 UPSA</span><span>Made for Philippine surfing</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
